@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Xay dung form dang ky tai khoan voi yeu cau
+    user name
+    password
+    confirm pass
+    gioi tinh
+    nghe nghiep(di lam, sinh vien, khac..)
+    dang ky
+    -->
+    <form
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      method="POSt"
+    >
+      <div>
+        <label for="username">Username:</label><br />
+        <input type="text" id="username" name="username" required /><br />
+        <label for="pass">Password:</label><br />
+        <input type="password" id="pass" name="password" /> <br />
+        <label for="cfpass">Confirm Password:</label><br />
+        <input type="password" id="Cfpass" name="confirm-password" /> <br />
+      </div>
+
+      <div>
+        <p>Gioi tinh</p>
+        <label for="Nam" name="nam">Nam</label>
+        <input type="radio" id="Nam" value="Nam" name="gioitinh" />
+        <label for="Nu" name="nam">Nu</label>
+        <input type="radio" id="Nu" value="Nu" name="gioitinh" />
+        <label for="Khac" name="khac">Khac</label>
+        <input type="radio" id="Khac" value="Khac" name="gioitinh" />
+      </div>
+
+      <div>
+        <p>Nghe nghiep</p>
+        <input type="radio" name="dilam" />
+        <label for="dilam" name="dilam">Di lam</label>
+        <input type="radio" name="sinhvien" />
+        <label for="sinhvien" name="sinhvien">Sinh vien</label>
+        <input type="radio" name="khac" />
+        <label for="khac">Khac</label>
+      </div>
+
+      <div>
+        <p>Cau hoi:</p>
+        <textarea name="" id="" name="cauhoi"></textarea>
+        <button type="submit" name="cauhoi">Gui</button>
+      </div>
+    </form>
+  </body>
+</html>
