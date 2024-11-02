@@ -1,0 +1,49 @@
+html{
+    font-family: "Poppins", sans-serif;
+}
+
+.user-card{
+    padding: 50px;
+    height: 633px;
+    width: 562px;
+    border-radius: 10px;
+    background-color:#E6EFFA;
+    margin: 100px auto;
+    
+}
+
+.margin-28{
+    margin: 28px;
+}
+
+.content{
+    height: 607px;
+    width: 562px;
+    background-color:#ffffff;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 5px 10px #E6EFFA;
+}
+
+.avatar{
+    position:relative;
+    padding: 12px;
+    top: 0;
+}
+
+
+ul,li{
+   list-style-type: none; 
+   margin: 0;
+   padding: 0;
+}
+
+.decription{
+    padding: 28,28,0,0;
+}
+
+button{
+    height: 40px;
+    width: 120px;
+}
+
