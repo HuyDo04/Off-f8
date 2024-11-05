@@ -1,13 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
 html{
     font-family: "Poppins", sans-serif;
+    background-color: antiquewhite;
 }
 
 .user-card{
-    padding: 50px;
-    height: 633px;
     width: 562px;
     border-radius: 10px;
-    background-color:#E6EFFA;
     margin: 100px auto;
     
 }
@@ -17,16 +19,14 @@ html{
 }
 
 .content{
-    height: 607px;
-    width: 562px;
     background-color:#ffffff;
     display: flex;
-    border-radius: 10px;
-    box-shadow: 5px 10px #E6EFFA;
+    border-radius: 25px;
+    background: #FFF;;
+    padding: 50px;
 }
 
 .avatar{
-    position:relative;
     padding: 12px;
     top: 0;
 }
@@ -39,7 +39,7 @@ ul,li{
 }
 
 .decription{
-    padding: 28,28,0,0;
+    margin-bottom: 28px;
 }
 
 button{
