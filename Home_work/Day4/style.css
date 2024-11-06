@@ -98,7 +98,8 @@ h1{
         width: 31px;
         height: 31px;
     }
-    span{
+    a{
+        text-decoration: none;
         color: #0E0E38;
         font-family: Poppins;
         font-size: 16px;
