@@ -1,24 +1,24 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-html{
+html {
     font-family: "Poppins", sans-serif;
     
 }
 
-body{
+body {
     padding: 0;
     margin: 0;
     
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-.container{
+.container {
     width: 100%;
     height: 1708px;
     padding:40px 120px;
@@ -26,8 +26,8 @@ a{
     background: linear-gradient(293deg, #E6E6E4 7.23%, #F0E8E2 97.74%);
 }
 
-header{
-    width: 1272px;
+header {
+    width: 100%;
     height: 48px;
     flex-shrink: 0;
     display: flex;
@@ -35,7 +35,7 @@ header{
     color: #1F1D2A;
 }
 
-.logo{
+.logo {
     width: 110px;
     height: 45px;
     flex-shrink: 0;
@@ -43,13 +43,13 @@ header{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    a{
+    a  {
         text-decoration: none;
         color: #1F1D2A;
     }
 }
 
-.list-item{
+.list-item {
     width: 442.5px;
     height: 26px;
     flex-shrink: 0;
@@ -65,7 +65,7 @@ header{
     }
 }
 
-.btn{
+.btn {
     color: #1F1D2A;
     text-align: center;
     align-items: center;
@@ -80,33 +80,33 @@ header{
     border-radius: 6px;
     border: 1px solid #1F1D2A;
     button{
+        font-weight: 500;
         border: none;
         background: none;
         cursor: pointer;
     }
 }
 
-.infomation{
+.infomation {
     margin-top: 80px;
     display: flex;
-    width: 1163px;
+    width: 100%;
     height: 537px;
     flex-shrink: 0;
 }
 
-.name{
+.name {
     width: 561.148px;
     height: 251.814px;
     flex-shrink: 0;
-    h1{
+    h1 {
         color: var(--black, #1F1D2A);
         font-size: 55px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
     }
-    
-    p{
+    p {
         flex-shrink: 0;
         color:#9B948E;
         font-size: 16px;
@@ -114,7 +114,8 @@ header{
         font-weight: 400;
         line-height: 30px; /* 187.5% */
     }
-    button{
+
+    button {
         width: 164.758px;
         height: 70.791px;
         flex-shrink: 0;
@@ -125,18 +126,14 @@ header{
         text-align: center;
         font-size: 20px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         line-height: normal;
         cursor: pointer;
     }
 }
 
-.image{
-    display: flex;
-    align-items: center;
-}
-
-.big-image{
+.slider {
+    margin-left: 79px;
     width: 484.583px;
     height: 505.65px;
     flex-shrink: 0;
@@ -145,7 +142,7 @@ header{
     }
 }
 
-.body-content{
+.body-content {
     width: 763.733px;
     height: 84px;
     flex-shrink: 0;
@@ -162,34 +159,34 @@ header{
     }
 }
 
-.brand{
+.brand {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
 
-.brand-image{
+.brand-image {
     width: 91.912px;
     height: 30px;
     flex-shrink: 0;
     gap: 60px;
-        img{
+        img {
             width: 100%;
         }
 }
 
-.start-your-career{
+.start-your-career {
     margin: 100px auto;
     flex-shrink: 0;
     text-align: center;
-    p{
+    p {
         color: var(--black, #1F1D2A);
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
     }
-    h2{
+    h2 {
         color: var(--black, #1F1D2A);
         font-size: 32px;
         font-style: normal;
@@ -199,7 +196,7 @@ header{
     }
 }
 
-.info-teacher{
+.info-teacher {
     width: 295px;
     height: 450px;
     flex-shrink: 0;
@@ -207,7 +204,7 @@ header{
     border-radius: 20px;
 }
 
-footer{
+footer {
     flex-wrap: wrap;
     margin-top: 80px;
     display: flex;
@@ -221,23 +218,21 @@ footer{
     }
 }
 
-.description{
-    padding-left: 20px;
-    margin-top: 20px;
-    span{
-        margin-top: 200px;
+.description {
+    padding: 20px;
+    h3 {
+        margin: 0;
         color:#1F1D2A;
-        font-family: Poppins;
         font-size: 20px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
     }
-    p{
+    p {
         margin-top: 6px;
-        color: var(--cream, #9B948E);
+        color:  #9B948E;
         font-size: 16px;
-        font-style: normal;
+        font-style:normal;
         font-weight: 400;
         line-height: normal;
     }
