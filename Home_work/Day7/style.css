@@ -47,6 +47,7 @@ header {
     font-style: normal;
     font-weight: 600;
     line-height: 28px;
+    position: relative;
 }
 
 nav {
@@ -96,12 +97,14 @@ main {
 }
 
 .avatar {
+    position: relative;
     width: 470px;
     height: 685px;
     flex-shrink: 0;
     img {
         width: 100%;
     }
+    
 }
 
 .desc-course {
@@ -200,7 +203,7 @@ main {
     }
 }
 
-.courses {
+.courses-desc {
     color: #5F5B53;
     font-size: 18px;
     font-style: normal;
@@ -215,4 +218,54 @@ main {
         font-weight: 700;
         line-height: 54px;
     }
+}
+
+.card-courses {
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 28px 58px  28px 24px;
+    position: absolute;
+    right: -100px;
+    bottom:48px;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    margin-right: 16px;
+}
+
+.info-course {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-courses {
+    color: #5F5B53;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    strong {
+        color: #171100;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+    }
+}
+
+.line {
+    border-bottom: 2px solid;
+    width: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 1.5px;
+    color: #171100;
 }
