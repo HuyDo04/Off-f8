@@ -10,6 +10,10 @@ a {
     text-decoration: none;
 }
 
+.popular-courses {
+    margin-top: 200px;
+}
+
 .container {
     background-color: #FFFFFF;
     max-width: 1440px;
@@ -24,7 +28,8 @@ h2 {
     font-size: 38px;
     font-style: normal;
     font-weight: 700;
-    line-height: 48px; /* 126.316% */
+    line-height: 48px;
+    /* 126.316% */
     letter-spacing: -0.76px;
 
     a {
@@ -44,10 +49,26 @@ h2 {
 }
 
 .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
+    border:1px solid #FFB900;
+    border-radius: 50%;
     img {
-        width: 100%;
+        color: #fff;
+    }
+}    
+
+.next {
+    transform: scale(-1);
+}
+
+.navigation:hover {
+    background-color: #FFB900;
+    img {
+        filter: grayscale(100%) brightness(150%);
     }
 }
 
@@ -65,7 +86,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-   
+
 }
 
 .card-course-desc-hover {
@@ -78,11 +99,11 @@ h2 {
 
 .card-course-desc {
     height: 466px;
-    width: 370px; 
+    width: 370px;
     background: #FFF;
     border-radius: 12px;
     border: 1px solid #E2DFDA;
-   
+
 }
 
 .image-course-card {
@@ -92,10 +113,10 @@ h2 {
     border-radius: 12px 12px 0px 0px;
 }
 
-.infor-course{
+.infor-course {
     padding: 16px 22px 22px 22px;
 
-    p{
+    p {
         margin-top: 6px;
         color: #5F5B53;
         font-size: 14px;
@@ -116,13 +137,13 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     a {
         color: #171100;
     }
 
     h3 {
-        
+
         font-size: 18px;
         font-style: normal;
         font-weight: 600;
@@ -142,6 +163,7 @@ h2 {
     width: 18px;
     height: 18px;
     flex-shrink: 0;
+
     img {
         width: 100%;
     }
@@ -173,11 +195,10 @@ h2 {
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    line-height: 26px; 
-    cursor: pointer;   
+    line-height: 26px;
 }
 
-.btn-book-now{
+.btn-book-now {
     padding: 12px 24px;
     border-radius: 25px;
     background: #171100;
@@ -188,12 +209,9 @@ h2 {
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    line-height: 26px; 
-    cursor: pointer;   
+    line-height: 26px;
 }
 
 .btn-book-now:hover {
     background: #FFB900;
 }
-
-

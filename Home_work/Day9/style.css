@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFF;
+}
+
+a {
+    text-decoration: none;
+    color: #171100;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.mg-top-16 {
+    margin-top: 16px;
+}
+
+.mg-top-32 {
+    margin-top: 32px;
+}
+
+.d-flex {
+	display: flex;
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.text-h3 {
+    font-family: Sen;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.76px;
+}
+
+.text-p {
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.btn {
+	color: #fff;
+	border-radius: 99px;
+	font-weight: 600;
+	transition: all ease-in-out 0.3s;
+    background-color:#FFB900;
+}
+
+.btn:hover {
+	color: #fff;
+	border-radius: 999px;
+	font-weight: 600;
+	transition: all ease-in-out 0.3s;
+    background-color: #171100;
+}
+
+.btn-medium {
+    padding: 11px 37px;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 28px; 
+}
+
+.btn-mg-32 {
+    margin-top: 32px;
+}
+
+.container {
+    background-color: #FFFFFF;
+    max-width: 1440px;
+    padding: 47px 135px 65px;
+    font-family: "Poppins", serif;
+    margin: 0 auto;
+}
+
+.testimonial {
+    padding: 96px 135px;
+    background: #2E2100;
+    gap: 242px;
+    width: 100%;
+}
+
+.quote {
+    .avatar {
+        width: 72px;
+        height: 72px;
+        flex-shrink: 0;
+        img {
+            width: 100%;
+        }
+    }
+
+    h4 {
+        margin-top: 18px;
+        color: #F7F7F7;
+        font-family: Sen;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 34px;
+    }
+
+    p {
+        margin-top: 4px;
+        color: #BFBCB2;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}
+
+.slide {
+    margin-top: 28px;
+    gap: 6px;
+    div {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #634700;
+    }
+
+   .slide-click {
+        background-color: #FFB900;
+    }
+}
+
+.quote-review-course {
+    position: relative;
+    padding-top: 28px;
+    padding-left: 30px;
+
+    p {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 26px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 40px;
+    }
+}
+
+.quotation-marks {
+    width: 30px;
+    height: 28px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    img {
+        width: 100%;
+    }
+}
+
+.features {
+    gap: 130px;
+    height: 438px;
+    margin-top: 200px;
+}
+
+.image-size {
+    width: 270px;
+    height: 404px;  
+    img {
+        width: 100%;
+    }
+}
+
+.symbolic-image-1 {
+    height: 430px;  
+    align-items: flex-start;
+}
+
+.symbolic-image-2 {
+    height: 430px;  
+    align-items: flex-end;
+}
+
+.call-to-action {
+    margin-top: 200px;
+}
+
+.symbolic-image-3 {
+    width: 470px;
+    height: 440px;
+    flex-shrink: 0;
+    img {
+        width: 100%;
+    }
+}

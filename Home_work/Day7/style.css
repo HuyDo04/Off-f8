@@ -18,11 +18,16 @@ a {
 }
 
 header {
+    z-index: 99;
     width: 100%;
-    height: 49px;
+    height: 59px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color:#FFFCF488;
+    position: sticky;
+    top: 0px;
+    width: 100%;
     a {
         color: #171100;
         font-family: Sen;
