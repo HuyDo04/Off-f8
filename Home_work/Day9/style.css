@@ -173,6 +173,10 @@ a {
     margin-top: 200px;
 }
 
+.features-image {
+    display: flex;
+}
+
 .image-size {
     width: 270px;
     height: 404px;  
