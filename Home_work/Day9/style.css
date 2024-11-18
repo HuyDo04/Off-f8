@@ -105,7 +105,7 @@ a {
         }
     }
 
-    h4 {
+    .student-feedback {
         margin-top: 18px;
         color: #F7F7F7;
         font-family: Sen;
@@ -170,7 +170,6 @@ a {
 
 .features {
     gap: 130px;
-    height: 438px;
     margin-top: 200px;
 }
 
@@ -182,14 +181,8 @@ a {
     }
 }
 
-.symbolic-image-1 {
-    height: 430px;  
-    align-items: flex-start;
-}
-
-.symbolic-image-2 {
-    height: 430px;  
-    align-items: flex-end;
+.symbolic-image:first-child {
+    margin-top: 34px;
 }
 
 .call-to-action {
