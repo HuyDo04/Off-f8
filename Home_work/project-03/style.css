@@ -1,0 +1,389 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Poppins", serif;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+img {
+    width: 100%;
+}
+
+.gap-36 {
+    gap: 36px;
+}
+
+.gap-24 {
+    gap: 24px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1440px;
+    padding: 40px 100px 40px 74px;
+}
+
+.our-services {
+    margin-right: 150px;
+}
+
+.account  {
+    margin-right: 140px;
+    gap: 68px;
+}
+
+header {
+    ul {
+        margin-right: 220px;
+    }
+
+    a {
+        position: relative;
+    }
+
+    a::after {
+        content: "";
+        width: 0;
+        height: 3px;
+        background-color: #B00000;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: ease-in-out 0.3s;
+    }
+
+    a:hover::after {
+        width: 100%;
+    }
+}
+
+.tele-phone::after {
+    content: "";
+    width: 1.2px;
+    height: 100%;
+    background: #DAD8D8;
+    position: absolute;
+    left: -30px;
+}
+
+.logo {
+    width: 101.025px;
+    height: 68px;
+    flex-shrink: 0;
+}
+
+.tele-phone {
+    position: relative;
+    width: 22.25px;
+    height: 22.667px;
+    span {
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 15px; 
+    }
+}
+
+main {
+    margin-top:80px ;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+        margin-top: 26px;
+        color: #2E2E2E;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 77.5px; /* 121.094% */
+    }
+}
+
+.a-text {
+    color: rgba(214, 212, 212, 0.88);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.title {
+    p {
+        margin-top: 34px;
+        color:#808080;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 175% */
+        letter-spacing: 0.8px;
+    }
+}
+
+.click {
+    color:#B00000 ;
+}
+
+.btn-all {
+    display: flex;
+    gap: 25px;
+    margin-top: 60px;
+}
+
+.btn {
+    padding: 12px;
+    border-radius: 8px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.btn-medium-red {
+    background: #B00000;
+    color: #FFF;
+    box-shadow: 0px 0px 64px 0px rgba(176, 0, 0, 0.30);
+}
+
+.btn-medium-white {
+    border: 1px solid  #000;
+    color: #000;
+}
+
+.iconic-image {
+    width: 522.03px;
+    height: 504px;
+    flex-shrink: 0;
+    margin-right: 26px;
+    position: relative;
+}
+
+.element,.element-1 {
+    position: absolute;
+    width: 41.679px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.element {
+    bottom: 160px;
+    left: -28px;
+}
+
+.element-1 {
+    top: 60px;
+    right: -28px;
+}
+
+.why-us {
+    margin-top: 80px;
+}
+
+.why-us-info {
+    display: flex;
+}
+
+.us-logo-panel {
+    margin-right: 82px;
+    width: 140.714px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.us-logo-imunify {
+    margin-right: 106px;
+    width: 125.424px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.us-logo-litespeed {
+    width: 125px;
+    height: 53.535px;
+    flex-shrink: 0;
+}
+
+.us-logo-soft {
+    padding-right: 16px;
+    margin-right: 44px;
+    width: 172px;
+    height: 92px;
+    flex-shrink: 0;
+}
+
+.us-logo-word {
+    margin-right: 76px;
+    width: 168px;
+    height: 56px;
+    flex-shrink: 0;
+}
+
+.us-logo-clou {
+    width: 143px;
+    height: 47px;
+    flex-shrink: 0;
+}
+
+.info {
+    h2 {
+        color: #18191F;
+        font-feature-settings: 'salt' on, 'liga' off;
+        font-family: Inter;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 64px; /* 133.333% */
+    }
+    
+    p {
+        margin-top: 32px;
+        color: #18191F;
+        font-feature-settings: 'salt' on, 'liga' off;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; 
+    }
+}
+
+.why-us-logo {
+    margin-top: 26px;
+    margin-left: 94px;
+}
+
+.uses {
+    margin-top: 128px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.icon-use {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+.use-sp {
+    h3 {
+        margin-top: 17px;
+        color: #000;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    p {
+        margin-top: 4px;
+        color: #000;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+}
+
+.price {
+    margin-top: 130px;
+    h2 {
+        color: #000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 60px; /* 120% */
+    }
+
+    p {
+        margin-top: 38px;
+        color: #000;
+        text-align: center;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; /* 100% */
+    }
+}
+
+.select {
+    margin-top: 58px;
+    justify-content: center;
+    gap: 26px;
+    span {
+        color: #000;
+        text-align: center;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+    }
+    span:last-child {
+        padding: 7px 8px;
+        border-radius: 8px;
+        background: #FFE87A;
+        color: #000;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 9px;
+    }
+}
+
+.select-img {
+    width: 93px;
+    height: 50px;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.basic-premium {
+    margin-top: 70px;
+    gap: 330px;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 133.333% */
+}
+
+.testimonial {
+    margin-top: 105px;
+}
+
+.mark {
+    width: 16px;
+    height: 14px;
+}

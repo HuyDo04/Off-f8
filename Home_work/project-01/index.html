@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tangerine:wght@400;700&display=swap");
+    </style>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="d-flex justify-between">
+        <div class="logo d-flex">
+          <img src="./img/house_Logos-05.png" alt="" class="logo-house" />
+          <a href="">Furniro</a>
+        </div>
+        <nav class="d-flex">
+          <ul class="nav-link d-flex">
+            <li><a href="">Home</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+
+          <ul class="nav-icon d-flex">
+            <li>
+              <a href="">
+                <img src="./img/mdi_account-alert-outline.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./img/akar-icons_search.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./img/akar-icons_heart.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./img/ant-design_shopping-cart-outlined.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="banner">
+          <img src="./img/banner.png" alt="" />
+          <nav class="d-flex">
+            <img src="./img/house_Logos-05.png" alt="" class="logo-house" />
+            <h1 class="title"><a href="">Cart</a></h1>
+            <div class="nav-item d-flex">
+              <a href="">Home</a>
+              <img
+                src="./img/dashicons_arrow-down-alt2.svg"
+                alt=""
+                class="arow-down"
+              />
+              <a href="">Cart</a>
+            </div>
+          </nav>
+        </section>
+
+        <section class="pay">
+          <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th class="text-left">Price</th>
+                <th class="text-left">Quantity</th>
+                <th class="text-left">Subtotal lore</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody class="t-body">
+              <tr>
+                <td class="d-flex gap-34 text-center">
+                  <img src="./img/sofa.svg" alt="" class="product-sofa" />
+                  Asgaard sofa
+                </td>
+                <td class="">Rs. 250,000.00</td>
+                <td><input type="number" value="1" min="1" /></td>
+                <td>Rs. 250,000.00</td>
+                <td>
+                  <img
+                    src="./img/ant-design_delete-filled.svg"
+                    alt=""
+                    class="icon-delete"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="check-out">
+            <h2>Cart Totals</h2>
+            <div class="subtotal">
+              <span>Subtotal</span><span>Rs. 250,000.00</span>
+            </div>
+            <div class="total d-flex">
+              <span>Total</span> <span>Rs. 250,000.00</span>
+            </div>
+            <a href="" class="btn btn-medium">Check-out</a>
+          </div>
+        </section>
+
+        <section class="features d-flex justify-between">
+          <div class="feature-item d-flex">
+            <div class="feature-icon">
+              <img src="./img/trophy.png" alt="" />
+            </div>
+            <div class="feature-item-title">
+              <h3>High Quality</h3>
+              <p>crafted from top materials</p>
+            </div>
+          </div>
+
+          <div class="feature-item d-flex">
+            <div class="feature-icon">
+              <img src="./img/guarantee.png" alt="" />
+            </div>
+            <div class="feature-item-title">
+              <h3>Warranty Protection</h3>
+              <p>Over 2 years$</p>
+            </div>
+          </div>
+
+          <div class="feature-item d-flex">
+            <div class="feature-icon">
+              <img src="./img/shipping.png" alt="" />
+            </div>
+            <div class="feature-item-title">
+              <h3>Free Shipping</h3>
+              <p>Order over 150 $</p>
+            </div>
+          </div>
+
+          <div class="feature-item d-flex">
+            <div class="feature-icon">
+              <img src="./img/customer-support.png" alt="" />
+            </div>
+            <div class="feature-item-title">
+              <h3>24 / 7 Support</h3>
+              <p>Dedicated support</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="logo-small"><a href="">Funiro.</a></div>
+            <address class="mg-46">
+              400 University Drive Suite 200 Coral <br />
+              Gables,<br />FL 33134 USA
+            </address>
+          </div>
+
+          <div class="footer-column">
+            <div class="link">Link</div>
+            <ul>
+              <li class="mg-46"><a href="">Home</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <div class="link">Help</div>
+            <ul>
+              <li class="mg-46"><a href="">Payment Options</a></li>
+              <li><a href="">Returns</a></li>
+              <li><a href="">Privacy Policies</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <div class="link">Newsletter</div>
+            <form action="#" class="mg-46">
+              <input
+                type="email"
+                placeholder="Enter Your Email Address"
+                class="enter-email"
+              />
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+        <hr />
+        <p>2023 furino. All rights reverved</p>
+      </footer>
+    </div>
+  </body>
+</html>

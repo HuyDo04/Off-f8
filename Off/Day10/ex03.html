@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .after-hover {
+        padding-bottom: 12px;
+        position: relative;
+        display: inline-block;
+      }
+
+      .after-hover::after {
+        content: "";
+        background-color: black;
+        width: 0px;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: all ease-in-out 0.3s;
+        border-radius: 99px;
+      }
+
+      .after-hover:hover::after {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="after-hover">
+      Lorem ipsum dolor sit amet consectetur adipisicing . Ad sed animi
+    </p>
+  </body>
+</html>
