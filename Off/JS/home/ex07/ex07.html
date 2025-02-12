@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bé Tập Tính</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .calculator {
+        background: rgb(231, 230, 230);
+        padding: 20px;
+        text-align: center;
+        width: 400px;
+      }
+      input,
+      button {
+        padding: 10px;
+        margin: 5px 0;
+        font-size: 16px;
+      }
+      .result {
+        background: #e9ecef;
+        padding: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .error {
+        color: red;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <h2>Bé Tập Tính Website</h2>
+      <label>Nhập số thứ nhất:</label>
+      <input type="number" id="number1" placeholder="Nhập số thứ nhất" />
+      <br />
+      <label>Nhập số thứ hai:</label>
+      <input type="number" id="number2" placeholder="Nhập số thứ hai" />
+
+      <div>
+        <input type="radio" name="operation" value="add" /> Cộng
+        <input type="radio" name="operation" value="subtract" /> Trừ
+        <input type="radio" name="operation" value="multiply" /> Nhân
+        <input type="radio" name="operation" value="divide" /> Chia
+      </div>
+
+      <button onclick="performCalculation()">Tính</button>
+
+      <div id="result" class="result"></div>
+      <div id="error" class="error"></div>
+    </div>
+
+    <script src="./ex07.js"></script>
+  </body>
+</html>

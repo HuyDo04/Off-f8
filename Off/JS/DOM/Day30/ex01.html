@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Add a background color all elements with class="example":</p>
+    <h2 class="example">A heading</h2>
+    <p class="example">A paragraph.</p>
+
+    <ol>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ol>
+
+    <script>
+      // HTML collection chỉ chứa những element
+      // NodeList có thể chứa text và nhiều phần tử khác
+
+      // nhưng thao tác duyệt
+      const nodeList = document.querySelectorAll(".example");
+      for (let i = 0; i < nodeList.length; i++) {
+        nodeList[i].style.backgroundColor = "red";
+      }
+      let olElement = document.getElementsByTagName("ol")[0];
+      console.log(olElement);
+
+      // olElement.forEach((element) => {
+      //     element.style.color = "red";
+      // }); not of function
+
+      console.log({ olElement });
+      console.log(olElement.childNodes);
+
+      const liElementC3 = document.querySelectorAll("li");
+      console.log(liElementC3);
+
+      liElementC3.forEach((item) => {
+        console.log(item);
+      });
+
+      /* 
+      createElemnt
+      appendChild
+      removeChild
+      */
+
+      const liElementCustom = document.createElement("li");
+      liElementCustom.innerText = "Noi dung the custom";
+
+      olElement.appendChild(liElementCustom);
+      //   olElement.removeChild(liElementCustom);
+      const newNode = document.createTextNode("item 6");
+      const newElement = document.createElement("p");
+      olElement.replaceChild(newElement, olElement.childNodes[5]);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+          .d-none {
+            display: none;
+          }
+        </style>
+      </head>
+      <body>
+        <button onclick="toggleForm()" id="toggleFormBtn">
+          <h2>Login/Register</h2>
+        </button>
+        <form id="registerForm" class="d-none">
+          <div class="form-group">
+            <label for="">Username</label>
+            <input type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="">Email</label>
+            <input type="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="">Password</label>
+            <input type="password" />
+          </div>
+
+          <div class="form-group">
+            <label for="">Confirm Password</label>
+            <input type="password" />
+          </div>
+
+          <button>Register now</button>
+        </form>
+
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="">Email</label>
+            <input type="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="">Password</label>
+            <input type="password" />
+          </div>
+
+          <button>Login now</button>
+        </form>
+        <script>
+          // An nut thay doi man hinh dang ky/nhap
+          const formRegister = document.getElementById("registerForm");
+          const formLogin = document.getElementById("loginForm");
+          const h2 = document.querySelector("h2");
+          function toggleForm() {
+            formRegister.classList.toggle("d-none");
+            formLogin.classList.toggle("d-none");
+            // formLogin.classList.toggle("d-none");
+            formRegister.classList.contains("d-none")
+              ? (h2.innerText = "register")
+              : (h2.innerText = "Login");
+          }
+          
+        </script>
+      </body>
+    </html>
+    
+  </body>
+</html>

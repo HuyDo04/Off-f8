@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ứng dụng Thần Số Học</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .result {
+        margin-top: 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      button {
+        background-color: green;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+
+      input {
+        padding: 10px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ứng dụng Thần Số Học</h1>
+    <label for="birthdate">Nhập ngày sinh của bạn:</label>
+    <input type="date" id="birthdate" />
+    <button onclick="printNumber()">Tính số chủ đạo</button>
+    <div class="result" id="total"></div>
+    <div id="prinf"></div>
+    <script src="./ex04.js"></script>
+  </body>
+</html>

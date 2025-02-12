@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Title</h1>
+    <h2>Title 1</h2>
+    <script src="./ex03.js"></script>
+    <!DOCTYPE html>
+    <html lang="vi">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Toggle Login and Signup</title>
+        <style>
+          /* Sơ bộ về style cho form */
+          .form-container {
+            display: none;
+            margin-top: 20px;
+          }
+        </style>
+      </head>
+      <body>
+        <button id="toggleFormBtn">Đăng nhập</button>
+
+        <div id="loginForm" class="form-container">
+          <h2>Form Đăng Nhập</h2>
+          <form>
+            <label for="loginEmail">Email:</label>
+            <input
+              type="email"
+              id="loginEmail"
+              placeholder="Nhập email"
+              required
+            />
+            <label for="loginPassword">Mật khẩu:</label>
+            <input
+              type="password"
+              id="loginPassword"
+              placeholder="Nhập mật khẩu"
+              required
+            />
+            <button type="submit">Đăng nhập</button>
+          </form>
+        </div>
+
+        <div id="signupForm" class="form-container">
+          <h2>Form Đăng Ký</h2>
+          <form>
+            <label for="signupEmail">Email:</label>
+            <input
+              type="email"
+              id="signupEmail"
+              placeholder="Nhập email"
+              required
+            />
+            <label for="signupPassword">Mật khẩu:</label>
+            <input
+              type="password"
+              id="signupPassword"
+              placeholder="Nhập mật khẩu"
+              required
+            />
+            <button type="submit">Đăng ký</button>
+          </form>
+        </div>
+
+        <script>
+          // Lấy các phần tử cần thiết
+          const toggleFormBtn = document.getElementById("toggleFormBtn");
+          const loginForm = document.getElementById("loginForm");
+          const signupForm = document.getElementById("signupForm");
+
+          let isLoginFormVisible = true;
+
+          // Hàm thay đổi giữa form đăng nhập và đăng ký
+          toggleFormBtn.addEventListener("click", () => {
+            if (isLoginFormVisible) {
+              // Ẩn form đăng nhập và hiển thị form đăng ký
+              loginForm.style.display = "none";
+              signupForm.style.display = "block";
+              toggleFormBtn.textContent = "Đăng ký"; // Thay đổi chữ trên nút
+            } else {
+              // Ẩn form đăng ký và hiển thị form đăng nhập
+              signupForm.style.display = "none";
+              loginForm.style.display = "block";
+              toggleFormBtn.textContent = "Đăng nhập"; // Thay đổi chữ trên nút
+            }
+            // Đổi trạng thái
+            isLoginFormVisible = !isLoginFormVisible;
+          });
+
+          // Mặc định hiển thị form đăng nhập
+          loginForm.style.display = "block";
+        </script>
+      </body>
+    </html>
+  </body>
+</html>

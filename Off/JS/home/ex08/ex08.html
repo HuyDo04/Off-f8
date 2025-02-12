@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chia Bill</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+      }
+      .container {
+        max-width: 320px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      input,
+      button {
+        margin: 5px;
+        padding: 10px;
+        font-size: 18px;
+        width: 90%;
+      }
+      .result {
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Chia Bill</h2>
+      <input type="number" id="billAmount" placeholder="Nhập tổng bill" />
+      <input type="number" id="peopleCount" placeholder="Nhập số người chia" />
+      <input
+        type="number"
+        id="tipAmount"
+        placeholder="Nhập tiền tip (nếu có)"
+      />
+      <br />
+      <button onclick="calculateBill()">Tính tiền</button>
+      <p class="result" id="result"></p>
+    </div>
+    <script src="./ex08.js"></script>
+  </body>
+</html>

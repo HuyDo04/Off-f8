@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    button {
+      background-color: green;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Ứng dụng Bói Bài Tarot</h1>
+      <button onclick="drawCard()">Rút bài</button>
+      <div class="card" id="card-display">
+        <p id="card-name"></p>
+        <p id="card-description"></p>
+      </div>
+    </div>
+    <script src="./ex03.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p></p>
+    </div>
+
+    <div>
+      <p></p>
+    </div>
+
+    <div>
+      <p></p>
+    </div>
+
+    <div>
+      <p></p>
+    </div>
+
+    <div>
+      <p></p>
+    </div>
+
+    <script>
+      function countElements(tagName) {
+        // Your code here
+        const getTagName = document.getElementsByTagName(tagName);
+        return getTagName.length;
+      }
+      // Giả sử trên trang web có 10 thẻ div và 5 thẻ p
+
+      console.log(countElements("div")); // 10
+      console.log(countElements("p")); // 5
+    </script>
+  </body>
+</html>

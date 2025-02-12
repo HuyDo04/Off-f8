@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./ex02.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="menu"></ul>
+      </nav>
+    </header>
+
+    <script>
+      const dataMenu = [
+        { id: 1, name: "Trang chủ", slug: "/" },
+        { id: 2, name: "Sản phẩm", slug: "/san-pham" },
+        { id: 3, name: "Về chúng tôi", slug: "/ve-chung-toi" },
+        { id: 4, name: "Phụ kiện", slug: "/phu-kien", parentId: 2 },
+      ];
+
+      const menuItems = dataMenu.reduce((acc, item) => {
+        if (item.parentId) {
+          if (!acc[item.parentId]) {
+            acc[item.parentId] = [];
+          }
+          acc[item.parentId].push(item);
+        }
+        return acc;
+      }, {});
+
+      let menuHtml = "";
+
+      dataMenu.forEach((item) => {
+        if (!item.parentId) {
+          // Tạo phần tử <li> cho mục chính
+          menuHtml += `<li><a href="${item.slug}">${item.name}</a>`;
+
+          // Kiểm tra nếu mục này có mục con
+          if (menuItems[item.id]) {
+            // Tạo danh sách con <ul>
+            menuHtml += "<ul>";
+
+            // Duyệt qua các mục con và thêm vào danh sách con
+            menuItems[item.id].forEach((subItem) => {
+              menuHtml += `<li><a href="${subItem.slug}">${subItem.name}</a></li>`;
+            });
+
+            menuHtml += "</ul>";
+          }
+
+          menuHtml += "</li>";
+        }
+      });
+
+      document.getElementById("menu").innerHTML = menuHtml;
+    </script>
+  </body>
+</html>

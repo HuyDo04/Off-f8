@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <ol>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol> -->
+    <script>
+      const arr1 = [
+        { id: 1, name: "Hoang" },
+        { id: 3, name: "Dung" },
+        { id: 2, name: "Hien" },
+      ];
+
+      const ol = document.createElement("ol");
+
+      arr1.sort((a, b) => a.id - b.id);
+
+      for (let i = 0; i < arr1.length; i++) {
+        const liElement = document.createElement("li");
+        liElement.innerText = arr1[i].name;
+        console.log(liElement);
+        ol.appendChild(liElement);
+      }
+      console.log(ol);
+      document.body.appendChild(ol);
+    </script>
+  </body>
+</html>

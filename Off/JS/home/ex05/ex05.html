@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        position: relative;
+      }
+
+      a {
+        text-decoration: none;
+        display: block;
+        padding: 10px 15px;
+        color: black;
+        background: #f0f0f0;
+        border: 1px solid #ccc;
+      }
+
+      a:hover {
+        background: #ddd;
+      }
+
+      /* Ẩn danh mục con */
+      ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 180px;
+        background: white;
+        border: 1px solid #ccc;
+      }
+
+      /* Hiển thị danh mục con khi hover vào cha */
+      li:hover > ul {
+        display: block;
+      }
+
+      /* CSS cho danh mục con */
+      ul ul li {
+        position: relative;
+      }
+
+      /* CSS cho danh mục cấp 2, 3 */
+      ul ul ul {
+        left: 100%;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="menu"></header>
+    <script src="./ex05.js"></script>
+  </body>
+</html>

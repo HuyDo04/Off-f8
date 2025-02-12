@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      method="POST"
+      id="register-form"
+    >
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" placeholder="email" name="email" />
+      </div>
+      <div class="form-group">
+        <label for="password">password</label>
+        <input type="password" placeholder="password" name="password" />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <script>
+      const registerForm = document.getElementById("register-form");
+      //   cach1 formData
+      //   addEventListener("submit", function (event) {
+      //     event.preventDefault();
+      //     const formData = new FormData(registerForm);
+      //     const datas = Object.fromEntries(formData);
+      //     console.log({ datas });
+      //   });
+
+      //   cach2
+      addEventListener("submit", function (event) {
+        event.preventDefault();
+        const valueEmail = document.getElementsByName("email")[0].value;
+        const valuePassword = document.getElementsByName("password")[0].value;
+
+        console.log({ valueEmail, valuePassword });
+        window.localStorage.setItem(
+          "userInfor",
+          JSON.stringify({ valueEmail, valuePassword })
+        );
+      });
+    </script>
+  </body>
+</html>
