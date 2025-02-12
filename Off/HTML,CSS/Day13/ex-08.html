@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 100%;
+        overflow: hidden;
+        background-color: #000;
+      }
+
+      p {
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        color: white;
+        animation: slideIn 10s linear infinite;
+      }
+
+      @keyframes slideIn {
+        0% {
+          transform: translate(100%, 0);
+        }
+
+        100% {
+          transform: translate(-100%, 0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati
+        natus dolore explicabo, possimus amet, id minus voluptates quia neque
+        temporibus laboriosam voluptate architecto nam facere numquam dolorum
+        voluptas necessitatibus ullam!
+      </p>
+    </div>
+  </body>
+</html>

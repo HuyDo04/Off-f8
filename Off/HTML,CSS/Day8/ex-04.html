@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .parent {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        background-color: yellowgreen;
+      }
+
+      .sale-value {
+        position: absolute;
+        right: 0;
+        background-color: red;
+      }
+
+      .sale-infor {
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <span class="sale-value">-33%</span>
+      <div class="sale-infor">
+        <span>15.11</span>
+        <span>Top bán chạy</span>
+      </div>
+    </div>
+  </body>
+</html>

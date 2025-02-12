@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: aqua;
+        width: 300px;
+        height: 300px;
+        position: relative;
+      }
+
+      .item {
+        position: absolute;
+        background-color: red;
+        width: 10px;
+        height: 10px;
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+        animation: slideIn 10s linear infinite;
+      }
+
+      @keyframes slideIn {
+        0% {
+          left: 0;
+          top: 0;
+          transform: translateX(45deg);
+        }
+        25% {
+          top: 0px;
+          left: 290px;
+        }
+        50% {
+          left: 290px;
+          top: 300px;
+        }
+
+        75% {
+          left: -10px;
+          top: 300px;
+        }
+
+        100% {
+          left: -10px;
+          top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">></div>
+    </div>
+  </body>
+</html>

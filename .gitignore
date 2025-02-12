@@ -1,0 +1,9 @@
+# Ignore build output
+build/
+dist/
+.vscode/
+
+# Ignore package manager directories
+node_modules/
+vendor/
+package-lock.json

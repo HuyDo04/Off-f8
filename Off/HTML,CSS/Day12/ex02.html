@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* .grid-container {
+        display: grid;
+        grid-template-columns: 100px 100px 1fr;
+        grid-template-rows: 1fr 100px 1fr;
+      }
+
+      .item {
+        border: 1px solid red;
+      }
+
+      .grid-item1 {
+        grid-column: span 3;
+      }
+
+      .grid-item5 {
+        grid-column: span 2;
+      }
+
+      .grid-item4 {
+        grid-row: span 2;
+      } */
+
+      /* .grid-item3,
+      .grid-item4,
+      .grid-item5 {
+        grid-column: span 4;
+      }
+
+      .grid-item6,
+      .grid-item7,
+      .grid-item8,
+      .grid-item9 {
+        grid-column: span 3;
+      } */
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 100px minmax(100px, 1fr) minmax(100px, 1fr) 60px;
+      }
+
+      .item {
+        border: 1px solid red;
+      }
+
+      .grid-item1 {
+        grid-column: span 3;
+      }
+
+      .grid-item5 {
+        grid-column: span 3;
+      }
+
+      /* .grid-item2,
+      .grid-item4 {
+        grid-row: span 2;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>Grid Elements</h1>
+
+    <p>
+      A Grid Layout must have a parent element with the
+      <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.
+    </p>
+
+    <p>
+      Direct child element(s) of the grid container automatically becomes grid
+      items.
+    </p>
+
+    <!-- <div class="grid-container">
+      <div class="item grid-item1">1</div>
+      <div class="item grid-item2">2</div>
+      <div class="item grid-item3">3</div>
+      <div class="item grid-item4">4</div>
+      <div class="item grid-item5">5</div>
+      <div class="item grid-item6">6</div>
+      <div class="item grid-item7">7</div>
+      <div class="item grid-item8">8</div>
+      <div class="item grid-item9">9</div>
+    </div> -->
+
+    <!-- <div class="grid-container">
+      <div class="item grid-item1">1</div>
+      <div class="item grid-item2">2</div>
+      <div class="item grid-item3">3</div>
+      <div class="item grid-item4">4</div>
+      <div class="item grid-item5">5</div>
+    </div> -->
+
+    <div class="grid-container">
+      <div class="item grid-item1">1</div>
+      <div class="item grid-item2">2</div>
+      <div class="item grid-item3">3</div>
+      <div class="item grid-item4">4</div>
+      <div class="item grid-item5">5</div>
+    </div>
+  </body>
+</html>

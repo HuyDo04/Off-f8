@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Poppins", sans-serif;
+    background-color: antiquewhite;
+}
+
+.user-card{
+    width: 562px;
+    border-radius: 10px;
+    margin: 100px auto;
+    
+}
+
+.margin-28{
+    margin: 28px;
+}
+
+.content{
+    background-color:#ffffff;
+    display: flex;
+    border-radius: 25px;
+    background: #FFF;;
+    padding: 50px;
+}
+
+.avatar{
+    padding: 12px;
+    top: 0;
+}
+
+
+ul,li{
+   list-style-type: none; 
+   margin: 0;
+   padding: 0;
+}
+
+.decription{
+    margin-bottom: 28px;
+}
+
+button{
+    height: 40px;
+    width: 120px;
+}
+

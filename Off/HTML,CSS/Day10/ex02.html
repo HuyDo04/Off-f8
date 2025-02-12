@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+        position: relative;
+      }
+
+      h1::before {
+        content: "";
+        position: absolute;
+        left: 30%;
+        right: 30%;
+        bottom: -12px;
+        border-bottom: 2px solid #bbb;
+      }
+
+      h1::after {
+        content: "";
+        position: absolute;
+        left: 12%;
+        right: 12%;
+        bottom: -12px;
+        border-bottom: 2px dashed #bbb;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ve chung toi</h1>
+  </body>
+</html>

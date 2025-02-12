@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 1170px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "left-content right-content right-content"
+          "footer footer footer";
+        grid-auto-rows: 100px minmax(calc(100vh - 160px), 1fr) 60px;
+      }
+
+      .grid-item {
+        border: 1px dashed blue;
+      }
+
+      header {
+        grid-area: header;
+      }
+
+      .left-content {
+        grid-area: left-content;
+      }
+
+      .right-content {
+        grid-area: right-content;
+      }
+
+      footer {
+        grid-area: footer;
+      }
+
+      .product-list {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .product-item {
+        border: 1px solid red;
+        flex-shrink: 1;
+        flex-grow: 1;
+        flex-basis: 200px;
+        /* width: 200px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="grid-item">Header</header>
+
+      <div class="left-content grid-item">Left content</div>
+      <div class="right-content grid-item">
+        <div class="product-list">
+          <div class="product-item">item</div>
+          <div class="product-item">item</div>
+          <div class="product-item">item</div>
+          <div class="product-item">item</div>
+          <div class="product-item">item</div>
+          <div class="product-item">item</div>
+          <div class="product-item">item</div>
+        </div>
+      </div>
+
+      <footer class="grid-item">Footer</footer>
+    </div>
+  </body>
+</html>
