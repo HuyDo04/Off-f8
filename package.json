@@ -1,27 +1,19 @@
 {
-  "name": "f8_k11",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"json-server-auth --watch db.json --port\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0"
+  },
   "dependencies": {
-    "daemon": "^1.1.0",
-    "init": "^0.1.2",
+    "concurrently": "^9.1.2",
     "json-server": "^0.17.4",
     "json-server-auth": "^2.1.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "json-server --watch db.json --port 3000 -m ./node_modules/json-server-auth"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/HuyDo04/F8_K11.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/HuyDo04/F8_K11/issues"
-  },
-  "homepage": "https://github.com/HuyDo04/F8_K11#readme",
-  "description": ""
+  }
 }

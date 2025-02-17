@@ -1,22 +1,19 @@
 {
-  "users": [
+  "posts": [
     {
       "id": 1,
-      "name": "Alice"
-    },
-    {
-      "id": 2,
-      "name": "Bob"
-    },
-    {
-      "email": "huydo2@gmail.com",
-      "password": "$2a$10$N4R2e.G.imUbySlFVw7jbOKdXDuJHuy.5vBJ/Kg5EirLWa5OWkpLu",
-      "id": 3
-    },
-    {
-      "email": "huydo04@gmail.com",
-      "password": "$2a$10$g/7wX.iofM35XD0cBLirKu4nUJlqZmd8gXtTLbMWZGxDBhF5So4yy",
-      "id": 4
+      "title": "json-server",
+      "author": "typicode"
     }
-  ]
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
