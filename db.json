@@ -15,5 +15,53 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "users": [
+    {
+      "email": "huydo2@gmail.com",
+      "password": "$2a$10$wXtrDqjfyhlpPtPahTY4nurDSSpH6wEGE.goEaqbJl2ATg8Nl5YRu",
+      "id": 1
+    },
+    {
+      "email": "huydo041203@gmail.com",
+      "password": "$2a$10$X8aL.SWQ59VKXS03cb3P3.RG4p2dW2zHllxY8GXO47lOvziDwGTLm",
+      "id": 2
+    },
+    {
+      "email": "nguyenvana@gmail.com",
+      "password": "$2a$10$YQTEl28JpNTCTBFrdku7ru1pThScKxHYnkq35icMtwJu4Rl/RvetG",
+      "id": 3
+    },
+    {
+      "email": "huydo04@gmail.com",
+      "password": "$2a$10$DqHIQVvRndOGqe2h/b53JerpnC.iqf.MLducmHwd3BYaKpqBlbB7O",
+      "id": 4
+    }
+  ],
+  "task": [
+    {
+      "name": "123",
+      "status": "todo",
+      "priority": 1,
+      "id": 3
+    },
+    {
+      "name": "task1",
+      "status": "todo",
+      "priority": 2,
+      "id": 4
+    },
+    {
+      "name": "task2",
+      "status": "doing",
+      "priority": 1,
+      "id": 5
+    },
+    {
+      "name": "task3",
+      "status": "done",
+      "priority": 3,
+      "id": 6
+    }
+  ]
 }

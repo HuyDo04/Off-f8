@@ -1,3 +1,4 @@
+import "/src/assets/styles/register.css"
 function Register () {
     return /*html*/`
     <form action="" id="registerForm">
